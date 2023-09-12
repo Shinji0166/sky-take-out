@@ -49,5 +49,11 @@
             <groupId>com.github.wechatpay-apiv3</groupId>
             <artifactId>wechatpay-apache-httpclient</artifactId>
         </dependency>
+        <!--swagger接口测试-->
+<!--        <dependency>-->
+<!--            <groupId>com.github.xiaoymin</groupId>-->
+<!--            <artifactId>knefe4j-spring-boot-start</artifactId>-->
+<!--            <version>3.0.2</version>-->
+<!--        </dependency>-->
     </dependencies>
 </project>
