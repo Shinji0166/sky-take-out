@@ -19,6 +19,22 @@ public class AliOssUtil {
     private String accessKeySecret;
     private String bucketName;
 
+    public String getAccessKeyId() {
+        return accessKeyId;
+    }
+
+    public void setAccessKeyId(String accessKeyId) {
+        this.accessKeyId = accessKeyId;
+    }
+
+    public String getAccessKeySecret() {
+        return accessKeySecret;
+    }
+
+    public void setAccessKeySecret(String accessKeySecret) {
+        this.accessKeySecret = accessKeySecret;
+    }
+
     /**
      * 文件上传
      *
@@ -27,6 +43,7 @@ public class AliOssUtil {
      * @return
      */
     public String upload(byte[] bytes, String objectName) {
+
 
         // 创建OSSClient实例。
         OSS ossClient = new OSSClientBuilder().build(endpoint, accessKeyId, accessKeySecret);
@@ -51,6 +68,7 @@ public class AliOssUtil {
                 ossClient.shutdown();
             }
         }
+
 
         //文件访问路径规则 https://BucketName.Endpoint/ObjectName
         StringBuilder stringBuilder = new StringBuilder("https://");
